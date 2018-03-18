@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/head_layout" />
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@drawable/title_back"-->
+        <!--android:layout_height="60dp">-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--&gt;-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_searchback"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/bt_searchback"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/btn_back" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:background="@drawable/search_etback"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_toLeftOf="@+id/rl_search"-->
+            <!--android:layout_toRightOf="@+id/rl_searchback">-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:background="@drawable/search_searchico"-->
+                <!--android:layout_width="15dp"-->
+                <!--android:layout_height="15dp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_searchCar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_toLeftOf="@+id/rl_deleted"-->
+                <!--android:background="@null"-->
+                <!--android:hint="@string/search_car"-->
+                <!--android:maxLength="10"-->
+                <!--android:singleLine="true"-->
+                <!--android:textColor="@color/gray_3"-->
+                <!--android:textColorHint="@color/gray_c"-->
+                <!--android:textSize="13dp"-->
+                <!--android:windowSoftInputMode="adjustResize" />-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_deleted"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentRight="true">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/bt_deleted"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:background="@drawable/search_close"-->
+                    <!--android:visibility="gone" />-->
+
+            <!--</RelativeLayout>-->
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rl_search"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:text="@string/search"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="15dp" />-->
+        <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10_dip"
+
+        >
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_35_dip"
+            android:layout_weight="1"
+
+            android:background="@drawable/shap_et"
+            android:layout_marginRight="5dp"
+            >
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_searchico"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:id="@+id/et_searchCar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/rl_deleted"
+                android:background="@null"
+                android:hint="请输入车牌号"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/gray_3"
+                android:textColorHint="@color/gray_c"
+                android:textSize="13dp"
+                android:windowSoftInputMode="adjustResize" />
+
+            <RelativeLayout
+                android:id="@+id/rl_deleted"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/bt_deleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/search_close"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/rl_search"
+            android:layout_width="@dimen/dimen_60_dip"
+            android:layout_height="@dimen/dimen_35_dip"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/select_query_bg"
+            android:gravity="center"
+            android:onClick="searchData"
+            android:padding="@dimen/dimen_2_dip"
+            android:text="@string/search"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/wh"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ececec" />
+    <LinearLayout
+        android:id="@+id/ll_backgroud"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl_searchlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/lv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@color/gray_e"
+            android:visibility="gone"></ListView>
+
+
+        <LinearLayout
+            android:id="@+id/no_date"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/default03"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/nodate"
+                android:text="@string/search_car_nodate" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

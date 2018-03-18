@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_5_dip"
+        android:gravity="center|left"
+        android:padding="@dimen/dimen_5_dip">
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/base_ranking"
+            android:layout_width="@dimen/dimen_20_dip"
+            android:layout_height="@dimen/dimen_20_dip"
+            android:background="@drawable/shape_sl"
+            android:gravity="center"
+            android:text="1"
+
+            android:textColor="@color/baise"
+            android:textSize="14sp" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/base_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:drawablePadding="@dimen/dimen_10_dip"
+            android:ellipsize="middle"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/dimen_5_dip"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="无数据"
+            android:textColor="@color/color_666"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/base_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:drawablePadding="@dimen/dimen_10_dip"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5_dip"
+            android:text="无数据"
+            android:textColor="@color/color_666"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1_dip"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        android:layout_marginRight="@dimen/dimen_10_dip"
+        android:background="@color/material_black9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_5_dip"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_5_dip">
+
+        <com.sx.lzlibrary.widget.MyProgressBar
+            android:id="@+id/base_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:layout_weight="9"
+            android:padding="@dimen/dimen_5_dip"
+            android:progressDrawable="@drawable/seekbarbackgrounli" />
+
+        <ImageView
+            android:id="@+id/base_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/enterprise3" />
+    </LinearLayout>
+
+</LinearLayout>

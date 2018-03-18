@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sx.trans">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".app.LzApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59e9909bb27b0a75b4001369" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="f6cf45c82b4c224cfb273a41b6515a2a" />
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.0.2"
+            tools:replace="android:value" />
+
+        <activity
+            android:name=".login.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.ui.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".safetyLearning.ui.SafeLearnActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".safetyLearning.progress.activity.ProgressDetailsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.CompanyLedgerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.PersonnelLedgerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.VehicleLedgerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.VehicleQueryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.CommpanyHandleFeedBackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.MailboxProcessingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.PersonnelQueryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.CommonActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.CommpanyAssuranceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+
+        <!-- 企业端 -->
+        <activity
+            android:name=".company.activity.CompanyMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".safetyLearning.progress.activity.ProgressActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".safetyLearning.data.DataActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.dynamicMonitoring.activity.StudyPlanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.dynamicMonitoring.activity.StudentLocalLawActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.home.activity.StudentAccidentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.home.activity.StudentYearCarefulActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.home.activity.StudentMaintenanceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.home.activity.StudentRemberActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.home.activity.StudentAccidentReportActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.home.activity.StudentMaintenanceReportActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.dynamicMonitoring.activity.StudentSpecialStudyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.home.activity.StudentCompanyRulesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.dynamicMonitoring.activity.StudentCaseAnalysisActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.dynamicMonitoring.activity.StudentPdfActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.dynamicMonitoring.activity.StudentEnterpriseRulesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.me.activity.MeVehicleInformationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.me.activity.MePolicyInformationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.me.activity.MeLeadershipMailboxActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.me.activity.MeProblemFeedbackActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.dynamicMonitoring.activity.VideoListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.dynamicMonitoring.activity.VideoShowActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".transport.home.activity.StudentCarfulStopActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+
+        <!-- 合并 -->
+
+
+        <!-- 高德地图 -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="2162bae67b46471544abd181000d0032" />
+        // a4878ddf8cb09f2dca500186db4350f4
+
+        <!-- 首页 -->
+
+
+        <!-- 账号信息 -->
+
+
+        <!-- 修改密码 -->
+        <activity
+            android:name=".supervision.activity.User.UpdatePwdActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 关于我们 -->
+
+
+        <!-- 搜索车辆 -->
+        <activity
+            android:name=".supervision.activity.SearchPublicCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supervision.activity.SearchVehicleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+
+        <!-- 车辆详情 -->
+        <activity
+            android:name=".supervision.activity.VehicleDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 车辆轨迹 -->
+        <activity
+            android:name=".supervision.activity.TrackActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 业户主页列表 -->
+
+
+        <!-- 业户公司列表 -->
+        <activity
+            android:name=".supervision.activity.company.CompanyListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 业户详情 -->
+        <activity
+            android:name=".supervision.activity.company.CompanyDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 业户车辆分布 -->
+        <activity
+            android:name=".supervision.activity.company.CompanyVehicleActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 企业搜索 -->
+        <activity
+            android:name=".supervision.activity.company.SearchCompanyActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 市区域分析 -->
+        <!-- 市区域分析 -->
+        <activity
+            android:name=".supervision.activity.Anlysis.RegionAllAnalysisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".supervision.activity.Anlysis.RegionAnalysisActivity"
+            android:screenOrientation="portrait" />
+        <!-- 报警分析 -->
+        <activity
+            android:name=".supervision.activity.WarmAnaysisActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 行业分析 -->
+        <activity
+            android:name=".supervision.activity.Anlysis.IndustryAnalysisActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 平台分析 -->
+
+
+        <!-- 视频分析 -->
+        <activity
+            android:name=".supervision.activity.VideoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 顺达视频 -->
+        <activity
+            android:name=".supervision.activity.VideoSDListActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 查岗问题首页 -->
+        <activity
+            android:name=".supervision.activity.PostRecord.PostSearchActivity"
+            android:screenOrientation="portrait" />
+        <!-- 查岗详情 -->
+        <activity
+            android:name=".supervision.activity.PostRecord.PostRecordListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 查岗问题选择 -->
+        <activity
+            android:name=".supervision.activity.PostRecord.PostTroubleListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 查岗详情 -->
+        <activity
+            android:name=".supervision.activity.PostRecord.PostRecordHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 车辆定位 -->
+        <activity
+            android:name=".supervision.activity.VehicleLocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".company.safemanager.SafeHidderDrangActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeInsuranceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeMeetingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.AnnualVerificationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeMaintainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeAccidentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeRulesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeInputActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.supervision.VehicleActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.home.activity.StudentYearCarfulReportActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".transport.dynamicMonitoring.activity.StudentAnnualPlanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeExerciseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.DetialSafeExerciseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeExerciseDetialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeAgreementActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeSpecialCampaignDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeHidderDetialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeInsuranceDetialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.safemanager.SafeRulesDetialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.SpecialLearningActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".company.activity.SpecialTargerDetialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustPan|stateAlwaysHidden" />
+        <activity android:name=".company.safemanager.SafeMeetingDetialActivity" />
+        <activity android:name=".company.safemanager.SafeInputDetialActivity" />
+        <activity android:name=".transport.home.activity.StudentHomeAlarmActivity" />
+        <activity android:name=".transport.dynamicMonitoring.activity.StudentEnterPriseDetialActivity" />
+        <activity android:name=".transport.me.activity.CongMeLeadershipMailboxActivity" />
+        <activity android:name=".transport.me.activity.MeSendMailboxActivity" />
+        <activity android:name=".transport.dynamicMonitoring.activity.MailBoxActivity" />
+        <activity android:name=".transport.dynamicMonitoring.activity.NoticeMessActivity" />
+        <activity android:name=".company.activity.MailBoxActivity" />
+        <activity android:name=".company.activity.NoticeActivity" />
+        <activity android:name=".company.safemanager.SafeReportActivity" />
+        <activity android:name=".company.activity.SafeReporDetailActivity" />
+        <activity android:name=".transport.dynamicMonitoring.activity.LawsAndegulationRsActivity" />
+        <activity android:name=".transport.dynamicMonitoring.activity.NoticeActivity" />
+        <activity android:name=".transport.me.activity.MeLeaderMailboxResultActivity" />
+        <activity android:name=".transport.dynamicMonitoring.activity.YearPlanDetailActivity" />
+        <activity
+            android:name=".company.safemanager.SafeSpecialCampaignActivity"
+            android:label="@string/title_activity_safe_special_campaign"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".safetyLearning.ui.EmployeeCompletionRateActivity"></activity>
+        <activity android:name=".safetyLearning.ui.CompletePersonnumberActivity"></activity>
+        <activity android:name=".safetyLearning.ui.EmployeeCompletionRateDtailActivity"></activity>
+        <activity android:name=".safetyLearning.ui.PersonLearnInfoActivity"></activity>
+        <activity android:name=".safetyLearning.ui.PersonLearnInfoDetailActivity"></activity>
+
+    </application>
+
+</manifest>

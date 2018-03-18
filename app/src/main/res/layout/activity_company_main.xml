@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+
+
+    <LinearLayout
+        android:id="@+id/bank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager_main"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation"
+            tools:ignore="NestedWeights" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="center"
+        android:background="#c8c8c8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_home"
+                android:layout_width="@dimen/dimen_30_dip"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_1_dip"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:background="@drawable/home_nor"
+                android:gravity="center"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5_dip"
+                android:text="首页"
+                android:textColor="@color/title_ground_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_supervision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_supervision"
+                android:layout_width="@dimen/dimen_30_dip"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_1_dip"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:background="@drawable/car_nor"
+                android:gravity="center"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_supervision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5_dip"
+                android:text="车辆监控"
+                android:textColor="@color/maintvno_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_appoint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_appoint"
+                android:layout_width="@dimen/dimen_30_dip"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginBottom="@dimen/dimen_1_dip"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:background="@drawable/securitymanagement_01"
+                android:gravity="center"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_appoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5_dip"
+                android:text="安全管理"
+                android:textColor="@color/maintvno_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_me"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_me"
+                android:layout_width="@dimen/dimen_30_dip"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginBottom="@dimen/dimen_1_dip"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:background="@drawable/wo"
+                android:gravity="center"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/dimen_5_dip"
+                android:layout_weight="1"
+                android:text="我"
+                android:textColor="@color/maintvno_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

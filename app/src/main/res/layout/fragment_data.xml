@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/t1"
+        layout="@layout/sl_title" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_margin="@dimen/hight_width_10dp">
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/base_type"
+            android:layout_width="@dimen/hight_width_25dp"
+            android:layout_height="@dimen/hight_width_25dp"
+            android:background="@drawable/jituan"
+            android:gravity="center"
+            android:text="8"
+
+            android:textColor="@color/baise"
+            android:textSize="@dimen/textsize_16sp" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/base_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hight_width_5dp"
+            android:drawablePadding="@dimen/hight_width_10dp"
+            android:gravity="center"
+            android:padding="@dimen/hight_width_5dp"
+            android:text="无数据"
+            android:textSize="@dimen/textsize_20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center">
+
+
+            <com.sx.trans.widget.font.LzTextView
+                android:id="@+id/people_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/hight_width_10dp"
+                android:background="@drawable/sumpeople_round"
+                android:drawablePadding="@dimen/hight_width_10dp"
+                android:gravity="center"
+                android:padding="@dimen/hight_width_5dp"
+                android:text="总人数"
+                android:textColor="#3CCAAA"
+                android:textSize="@dimen/textsize_16sp" />
+
+            <com.sx.trans.widget.font.LzTextView
+                android:id="@+id/baisi_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/hight_width_10dp"
+
+                android:background="@drawable/basishours_round"
+                android:drawablePadding="@dimen/hight_width_10dp"
+                android:gravity="center"
+                android:padding="@dimen/hight_width_5dp"
+                android:text="基础学时"
+                android:textColor="#FB947D"
+                android:textSize="@dimen/textsize_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center">
+
+
+            <com.sx.trans.widget.font.LzTextView
+                android:id="@+id/people_finish_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/hight_width_10dp"
+                android:background="@drawable/jianbian_people_finish"
+                android:drawablePadding="@dimen/hight_width_10dp"
+                android:gravity="center"
+                android:padding="@dimen/hight_width_5dp"
+                android:text="完成人数"
+                android:textColor="@color/baise"
+                android:textSize="@dimen/textsize_16sp" />
+
+            <com.sx.trans.widget.font.LzTextView
+                android:id="@+id/people_nofinish_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/hight_width_10dp"
+                android:background="@drawable/jianbian_people_nofinish"
+                android:drawablePadding="@dimen/hight_width_10dp"
+                android:gravity="center"
+                android:padding="@dimen/hight_width_5dp"
+                android:text="未完成人数"
+                android:textColor="@color/baise"
+                android:textSize="@dimen/textsize_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center">
+
+
+            <com.sx.trans.widget.font.LzTextView
+                android:id="@+id/people_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/hight_width_10dp"
+                android:background="@drawable/jianbian_people_finish_bi"
+                android:drawablePadding="@dimen/hight_width_10dp"
+                android:gravity="center"
+                android:padding="@dimen/hight_width_5dp"
+                android:text="人员完成率80%"
+                android:textColor="@color/baise"
+                android:textSize="@dimen/textsize_16sp" />
+
+            <com.sx.trans.widget.font.LzTextView
+                android:id="@+id/Hours_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/hight_width_10dp"
+                android:background="@drawable/jianbian_hours_finish_bi"
+                android:drawablePadding="@dimen/hight_width_10dp"
+                android:gravity="center"
+                android:padding="@dimen/hight_width_5dp"
+                android:text="学时完成率46%"
+                android:textColor="@color/baise"
+                android:textSize="@dimen/textsize_16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

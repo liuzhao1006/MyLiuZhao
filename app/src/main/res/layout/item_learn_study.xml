@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/study_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/beijing01"
+        android:gravity="center">
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/study_adapter_tap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/hight_width_30dp"
+            android:layout_weight="1.5"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:padding="@dimen/hight_width_5dp"
+            android:singleLine="true"
+            android:text="654564"
+            android:textSize="@dimen/textsize_20sp" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/study_adapter_"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/hight_width_15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/hight_width_10dp"
+            android:text="654564"
+            android:textSize="@dimen/textsize_16sp" />
+
+    </LinearLayout>
+</LinearLayout>

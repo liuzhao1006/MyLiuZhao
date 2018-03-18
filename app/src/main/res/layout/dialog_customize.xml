@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <com.hwj.juneng.yp.YearPicker
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/yp_year"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:yp_selectedColor="#1273f0"
+        app:yp_pointerColor="#00ffff"
+        />
+</LinearLayout>

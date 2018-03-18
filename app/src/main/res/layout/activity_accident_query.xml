@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_line"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/include_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10_dip">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_transparent"
+            android:overlapAnchor="false"
+
+            android:spinnerMode="dropdown" />
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_35_dip"
+            android:layout_weight="1"
+
+            android:background="@drawable/shap_et"
+            android:layout_marginRight="5dp"
+            >
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/search_searchico"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+
+            <EditText
+                android:id="@+id/et_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/rl_deleted"
+                android:background="@null"
+                android:hint="请输入事故名称"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/gray_3"
+                android:textColorHint="@color/gray_c"
+                android:textSize="13dp"
+                android:windowSoftInputMode="adjustResize" />
+
+            <RelativeLayout
+                android:id="@+id/rl_deleted"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/bt_deleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/search_close"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--<EditText-->
+            <!--android:id="@+id/et_vehicle"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="@dimen/dimen_35_dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/shap_et"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:hint="请输入事故名称"-->
+            <!--android:paddingLeft="@dimen/dimen_10_dip"-->
+            <!--android:textColor="#cccccc"-->
+            <!--android:textSize="13sp" />-->
+
+        <TextView
+            android:id="@+id/tv_query"
+            android:layout_width="@dimen/dimen_60_dip"
+            android:layout_height="@dimen/dimen_35_dip"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/select_query_bg"
+            android:gravity="center"
+            android:onClick="searchData"
+            android:padding="@dimen/dimen_2_dip"
+            android:text="查询"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/wh"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ececec" />
+
+    <LinearLayout
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <include layout="@layout/recycle_view" />
+
+        <ImageView
+            android:id="@+id/iv_pie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/default01"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

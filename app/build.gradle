@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'android-apt'
+//apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.sx.trans"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        jumboMode = true
+        javaMaxHeapSize "4g"
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/2', jniLibs.srcDirs = ['libs']]
+            jniLibs.srcDirs = ['libs']
+        }
+        // Move the tests to tests/java, tests/res, etc...
+//        instrumentTest.setRoot('tests')
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+//        debug.setRoot('build-types/debug')
+//        release.setRoot('build-types/release')
+    }
+
+    buildscript {
+        repositories {
+            jcenter()
+        }
+    }
+//    apt {  //3处添加
+//        arguments {
+//            androidManifestFile variant.outputs[0]?.processResources?.manifestFile//new style
+//            resourcePackageName "com.sx.trans"
+//        }
+//
+//    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+dependencies {
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    api 'com.android.support:appcompat-v7:26.0.2'
+    api 'com.android.support:design:26.0.2'
+    api 'com.android.support.constraint:constraint-layout:1.0.2'
+    api 'com.android.support:recyclerview-v7:26.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api project(':lzlibrary')
+    api 'com.yanzhenjie.nohttp:okhttp:1.1.3'
+    api 'com.alibaba:fastjson:1.2.38'
+    api 'com.alibaba:fastjson:1.2.38.android'
+    api 'com.apkfuns.logutils:library:1.5.1.1'
+    api 'com.apkfuns.log2file:log2file:1.0.0'
+    api 'com.blankj:utilcode:1.8.2'
+    api 'uk.co.chrisjenx:calligraphy:2.3.0'
+    api 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+    api files('libs/wheelview.jar')
+    api 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    /*加载PDF*/
+    api 'com.github.barteksc:android-pdf-viewer:2.7.0'
+    annotationProcessor 'org.androidannotations:androidannotations:4.0.0'
+    //    provided 'org.androidannotations:androidannotations:4.0.0'
+    //    compile 'org.androidannotations:androidannotations-api:4.0.0'
+    def dependencies = rootProject.ext.dependencies
+    api dependencies.glide
+    api dependencies.kotlinReflect
+    api files('libs/sun.misc.BASE64Decoder.jar')
+    api files('libs/MD5.jar')
+    api files('libs/badgeview.jar')
+    api files('libs/classes.jar')
+    api files('libs/AMap3DMap_5.2.0_AMapNavi_5.1.0_20170602.jar')
+    api files('libs/AMap_Location_V3.4.0_20170427.jar')
+    api files('libs/AMap_Search_V5.1.0_20170517.jar')
+    api files('libs/gson-2.2.4.jar')
+    api files('libs/litepal-1.5.1.jar')
+    //合并
+    api 'org.xutils:xutils:3.3.36'
+    api 'com.jakewharton:butterknife:5.1.1'
+    annotationProcessor 'com.jakewharton:butterknife:5.1.1'
+    api project(':ijkplayer-exo')
+    api project(':ijkplayer-java')
+    api project(':MPChartLib')
+    api project(':okhttputils')
+    api 'com.squareup:otto:1.3.8'
+    api project(':ijkplayer-armv7a')
+    api project(':PushSDK')
+    implementation files('libs/umeng-analytics-v5.5.3.jar')
+    implementation project(':lib_yearpicker')
+    compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+}

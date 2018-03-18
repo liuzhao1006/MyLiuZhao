@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/include1"
+            layout="@layout/include_top" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_20_dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_55_dip"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="信箱标题:"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="@dimen/dimen_2_dip"
+                android:layout_height="@dimen/dimen_22_dip"
+                android:layout_marginLeft="@dimen/dimen_3_dip"
+                android:layout_marginRight="@dimen/dimen_3_dip" />
+
+            <EditText
+                android:id="@+id/tv_handlefeedback_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:hint="请输入标题"
+                android:background="@null"
+                android:textColor="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_5_dip"
+            android:background="#ececec" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_55_dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="联系电话:"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+            <View
+                android:layout_width="@dimen/dimen_2_dip"
+                android:layout_height="@dimen/dimen_22_dip"
+                android:layout_marginLeft="@dimen/dimen_3_dip"
+                android:layout_marginRight="@dimen/dimen_3_dip" />
+            <EditText
+                android:id="@+id/tv_handlefeedback_date"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:background="@null"
+                android:hint="请输入电话"
+                android:textColor="#cccccc"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_5_dip"
+            android:background="#ececec" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_55_dip"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="内容:"
+                android:textColor="#333333"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_place"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_350_dip"
+            android:background="@drawable/rl_login_bg"
+            android:gravity="top"
+            android:hint="请输入内容..."
+            android:padding="3dp"
+            android:textColor="#999999"
+            android:textSize="15sp"></EditText>
+
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="@dimen/dimen_360_dip"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_45_dip"
+            android:background="@drawable/select_query_bg"
+            android:gravity="center"
+            android:text="发   送"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

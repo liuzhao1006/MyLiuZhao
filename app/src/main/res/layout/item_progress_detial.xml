@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detial"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/hight_width_5dp"
+        android:gravity="center|left"
+        android:padding="@dimen/hight_width_5dp">
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/base_ranking"
+            android:layout_width="@dimen/hight_width_20dp"
+            android:layout_height="@dimen/hight_width_20dp"
+            android:background="@drawable/rund"
+            android:gravity="center"
+            android:text="1"
+
+            android:textColor="@color/baise"
+            android:textSize="@dimen/textsize_14sp" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/base_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hight_width_5dp"
+            android:drawablePadding="@dimen/hight_width_10dp"
+            android:ellipsize="middle"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/hight_width_5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="无数据"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textsize_16sp"
+            android:textStyle="normal" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/base_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hight_width_5dp"
+            android:drawablePadding="@dimen/hight_width_10dp"
+            android:gravity="center"
+            android:padding="@dimen/hight_width_5dp"
+            android:text="无数据"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textsize_16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_width_1dp"
+        android:layout_marginLeft="@dimen/hight_width_10dp"
+        android:layout_marginRight="@dimen/hight_width_10dp"
+        android:background="@color/material_black9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/hight_width_5dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/hight_width_5dp">
+
+        <com.sx.lzlibrary.widget.MyProgressBar
+            android:id="@+id/base_bar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hight_width_30dp"
+            android:layout_weight="9"
+            android:padding="@dimen/hight_width_5dp"
+            android:progressDrawable="@drawable/seekbarbackgrounli" />
+
+        <ImageView
+            android:id="@+id/base_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/enterprise3" />
+    </LinearLayout>
+
+</LinearLayout>

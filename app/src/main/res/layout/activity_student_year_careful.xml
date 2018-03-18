@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/include_top" />
+
+
+    <com.sx.trans.widget.view.LzScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:paddingTop="@dimen/dimen_10_dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60_dip"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_45_dip"
+                        android:layout_height="@dimen/dimen_45_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/driverslicense" />
+
+                    <com.sx.trans.widget.font.LzTextView
+
+                        style="@style/Ledger_Text_Style"
+                        android:text="车牌号" />
+                </LinearLayout>
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_UseName"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center|right"
+                    android:padding="@dimen/dimen_10_dip"
+                    android:text="陕A12345"
+                    android:textColor="@color/maintvno_bg"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_30_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:src="@drawable/vehicle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:paddingTop="@dimen/dimen_10_dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60_dip"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_45_dip"
+                        android:layout_height="@dimen/dimen_45_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/driverslicense" />
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style"
+                        android:text="年审日期" />
+                </LinearLayout>
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/tv_drivingLicenseDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_10_dip"
+                    android:text="(2017年09月10日)"
+                    android:textColor="@color/maintvno_bg"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip"
+                android:background="@color/view_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:paddingTop="@dimen/dimen_10_dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60_dip"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_45_dip"
+                        android:layout_height="@dimen/dimen_45_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/driverslicense" />
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style"
+                        android:text="年审单位" />
+                </LinearLayout>
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_unit_year"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center|right"
+                    android:padding="@dimen/dimen_10_dip"
+                    android:text="3检站"
+                    android:textColor="@color/maintvno_bg"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_30_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:src="@drawable/date_right" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip"
+                android:background="@color/view_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:paddingTop="@dimen/dimen_10_dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60_dip"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_45_dip"
+                        android:layout_height="@dimen/dimen_45_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/driverslicense" />
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style"
+                        android:text="年审人" />
+                </LinearLayout>
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_person_year"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center|right"
+                    android:padding="@dimen/dimen_10_dip"
+                    android:text="张三"
+                    android:textColor="@color/maintvno_bg"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip"
+                android:background="@color/view_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:paddingTop="@dimen/dimen_10_dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60_dip"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_45_dip"
+                        android:layout_height="@dimen/dimen_45_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/driverslicense" />
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style"
+                        android:text="年审费用" />
+                </LinearLayout>
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_money_year"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center|right"
+                    android:padding="@dimen/dimen_10_dip"
+                    android:text="1234元"
+                    android:textColor="@color/maintvno_bg"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip"
+                android:background="@color/view_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:paddingTop="@dimen/dimen_10_dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60_dip"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_45_dip"
+                        android:layout_height="@dimen/dimen_45_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/driverslicense" />
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style"
+                        android:text="发票号" />
+                </LinearLayout>
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_s_year"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center|right"
+                    android:padding="@dimen/dimen_10_dip"
+                    android:text="12345678"
+                    android:textColor="@color/maintvno_bg"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip"
+                android:background="@color/view_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:paddingTop="@dimen/dimen_10_dip">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_60_dip"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_45_dip"
+                        android:layout_height="@dimen/dimen_45_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/driverslicense" />
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style"
+                        android:text="年审结果" />
+                </LinearLayout>
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:id="@+id/result_year"
+                    android:gravity="center|right"
+                    android:padding="@dimen/dimen_10_dip"
+                    android:text="通过"
+                    android:textColor="@color/maintvno_bg"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_30_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:src="@drawable/date_right" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip"
+                android:background="@color/view_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:paddingTop="@dimen/dimen_10_dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60_dip"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_45_dip"
+                        android:layout_height="@dimen/dimen_45_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/vehicle" />
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style"
+                        android:text="年审单" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1_dip"
+                    android:layout_margin="@dimen/dimen_10_dip"
+                    android:background="@color/view_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style_second"
+                        android:text="已分析(2次)" />
+
+                    <ImageView
+                        android:id="@+id/iv_year_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_180_dip"
+                        android:layout_marginLeft="@dimen/dimen_40_dip"
+                        android:layout_marginRight="@dimen/dimen_40_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/c" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip"
+                android:background="@color/view_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_5_dip"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:paddingTop="@dimen/dimen_10_dip">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60_dip"
+                    android:layout_marginLeft="@dimen/dimen_5_dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_45_dip"
+                        android:layout_height="@dimen/dimen_45_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/vehicle" />
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style"
+                        android:text="发票" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1_dip"
+                    android:layout_margin="@dimen/dimen_10_dip"
+                    android:background="@color/view_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.sx.trans.widget.font.LzTextView
+                        style="@style/Ledger_Text_Style_second"
+                        android:text="已分析(2次)" />
+
+                    <ImageView
+                        android:id="@+id/iv_money_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_180_dip"
+                        android:layout_marginLeft="@dimen/dimen_40_dip"
+                        android:layout_marginRight="@dimen/dimen_40_dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/b" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.sx.trans.widget.view.LzScrollView>
+
+</LinearLayout>

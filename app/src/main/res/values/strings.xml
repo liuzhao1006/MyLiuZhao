@@ -1,0 +1,554 @@
+<resources>
+    <string name="app_name">用车管理</string>
+    <string name="spiderwebchart">SpiderWebChart</string>
+    <string name="spiderwebchart_title1">title1</string>
+    <string name="spiderwebchart_title2">title2</string>
+    <string name="spiderwebchart_title3">title3</string>
+    <string name="spiderwebchart_title4">title4</string>
+    <string name="spiderwebchart_title5">title5</string>
+
+    <string name="app_name1">安全学习</string>
+    <string name="home">首页</string>
+    <string name="study">学习</string>
+    <string name="my">我的</string>
+    <string name="inputshenfen">请输入密码</string>
+    <string name="inputPhone">请输入登录账号</string>
+    <string name="queding">登录</string>
+    <string name="forgetpass">忘记密码</string>
+
+    <string name="picture">拍照</string>
+    <string name="need_permissions">该App需要打开摄像头拍照，并保存到设备上</string>
+    <string name="sorry">很抱歉，由于未被赋予相应权限，“Picture”停止运行</string>
+    <string name="failed">配置失败</string>
+    <string name="save_failed">保存失败</string>
+
+    <string name="list_listfooterview_normal">查看更多</string>
+    <string name="list_listfooterview_ready">松开载入更多</string>
+    <string name="list_listfooterview_is_all">已显示全部</string>
+    <string name="list_loading">加载中...</string>
+    <string name="no_data">暂时没有查询结果</string>
+
+
+    <string name="know">知道了</string>
+    <string name="tip">提示</string>
+    <string name="wait_dialog_title">正在请求，请稍后…</string>
+
+    <string name="wel_hint_1">欢迎页就是这么丑</string>
+    <string name="wel_hint_3">反正你也不能来打我</string>
+
+    <string name="nohttp">NoHttp</string>
+    <string name="nohttp_slogan">让你的网络请求更简单</string>
+
+    <!-- title field -->
+
+    <string name="title_original_activity">NoHttp原始用法</string>
+    <string name="title_method_activity">各种请求协议演示</string>
+    <string name="title_image_activity">NoHttp请求图片</string>
+    <string name="title_post_body_activity">POST一段JSON、自定包体</string>
+    <string name="title_define_request_activity">自定义Request</string>
+    <string name="title_json_activity">JsonObject、JsonArray演示</string>
+    <string name="title_cache_activity">五种缓存策略</string>
+    <string name="title_cache_http_activity">Http标准协议的缓存</string>
+    <string name="title_cache_request_failed_read_cache_activity">请求网络失败返回缓存</string>
+    <string name="title_cache_none_request_network_activity">没有缓存才去请求网络</string>
+    <string name="title_cache_only_read_cache">仅仅读取缓存</string>
+    <string name="title_cache_only_request_network">仅仅请求网络</string>
+    <string name="title_redirect_activity">响应码300…重定向</string>
+    <string name="title_upload_activity">文件上传</string>
+    <string name="title_upload_single_activity">单个文件上传</string>
+    <string name="title_upload_multi_activity">多个文件上传</string>
+    <string name="title_upload_file_list_activity">文件List上传</string>
+    <string name="title_upload_album">选择相册图片上传</string>
+    <string name="title_download_activity">文件下载</string>
+    <string name="title_download_single_activity">单个文件下载</string>
+    <string name="title_download_list_activity">多个文件下载</string>
+    <string name="title_cancel_activity">如何取消请求</string>
+    <string name="title_cancel_linkage_activity">和Activity/Fragment声明周期联动</string>
+    <string name="title_cancel_sign_activity">取消指定的某几个请求</string>
+    <string name="title_cancel_all_activity">取消队列中所有请求</string>
+    <string name="title_sync_activity">同步请求</string>
+    <string name="title_proxy_activity">通过代理请求服务器</string>
+    <string name="title_https_activity">Https请求演示</string>
+
+    <!-- Common -->
+
+    <string name="request_start">发起请求</string>
+
+    <string name="request_original_result">响应码：%1$d\n花费时间：%2$d毫秒。</string>
+
+    <string name="method_request_failed">有的方法为什么请求失败？</string>
+    <string name="method_request_failed_reason">在RFC2616中规定了Http1.1支持的请求方法，有些服务器、客户端(Android系统)不支持某些请求方法，所以请求失败是正常的，但是我们还是要遵守协议，推荐服务器和客户端都支持，这是非常好的设计和体验。</string>
+
+    <string name="request_succeed">请求成功</string>
+    <string name="request_failed">请求失败</string>
+
+    <!-- RequestMethod -->
+
+    <string name="request_json_result">请求方法：%1$s\n请求地址：%2$s\n响应数据：%3$s\n业务状态码：%4$s。</string>
+    <string name="request_succeed_head">请求成功, 请求方式为HEAD, 没有响应内容。</string>
+    <string name="request_method_head">请求方法为HEAD，没有响应内容。</string>
+    <string name="request_method_patch">服务器不支持的请求方法。</string>
+    <string name="request_method_not_allow">服务器仅仅支持请求方法：%1$s</string>
+
+    <!-- Json -->
+
+    <string name="request_json_object">JsonObject对象</string>
+    <string name="request_json_array">JsonArray对象</string>
+    <string name="request_json_body_input_tip">请求输入提交的json。</string>
+    <string name="request_define_fast_json">自定义FastJson请求</string>
+    <string name="request_define_java_bean">自定义JavaBean请求</string>
+
+    <!-- CacheStore -->
+
+    <string name="request_from_cache">结果来自缓存</string>
+    <string name="request_from_network">结果来自网络</string>
+    <string name="request_cache_request_failed_read_cache_tip">具体的可以看看代码，仅仅一句话设置缓存模式就可以了，测试的朋友，可以先成功请求一次，然后断网再请求，就会返回缓存啦！</string>
+    <string name="request_cache_only_read_cache_failed">缓存模式是Only_Read_Cache，但是没有找到缓存。</string>
+
+    <!-- Redirect -->
+
+    <string name="request_redirect_location">被重定向到URL：%1$s。</string>
+
+    <!-- Upload and download -->
+
+    <string name="upload_start">开始上传</string>
+    <string name="upload_succeed">上传完毕</string>
+    <string name="upload_failed">上传失败</string>
+    <string name="upload_cancel">上传被取消</string>
+    <string name="upload_error">上传发生错误</string>
+
+    <string name="upload_file_status">文件状态：</string>
+    <string name="upload_file_status_wait">等待操作…</string>
+    <string name="upload_file_select_album">选择图片</string>
+    <string name="upload_file_select_album_null">请选择图片</string>
+    <string name="upload_file_select_album_null_again">文件不存在，请重新选择图片</string>
+
+    <string name="download_mobile_data_tip">多任务下载四个文件，最好用WIFI测试喔。</string>
+    <string name="download_start">开始下载</string>
+    <string name="download_delete">删除文件</string>
+    <string name="delete_succeed">删除成功</string>
+    <!-- Download status -->
+    <string name="download_progress">已下载：%1$d&#037;&#037;，速度：%2$skb&#047;s</string>
+    <string name="download_status_pause">暂停</string>
+    <string name="download_status_be_pause">下载被暂停</string>
+    <string name="download_status_re_download">重新下载</string>
+    <string name="download_status_again_download">再次尝试</string>
+    <string name="download_status_resume">继续下载</string>
+    <string name="download_status_finish">下载完成！</string>
+    <!-- Download error -->
+    <string name="download_error">下载出错了：%1$s</string>
+    <string name="download_error_server">服务器数据错误！</string>
+    <string name="download_error_network">网络不可用，请检查网络！</string>
+    <string name="download_error_storage">存储卡错误，请检查存储卡！</string>
+    <string name="download_error_space">存储卡空间不足！</string>
+    <string name="download_error_timeout">下载超时！</string>
+    <string name="download_error_un_know_host">找不到服务器。</string>
+    <string name="download_error_url">URL地址错误。</string>
+    <string name="download_error_un">未知错误。</string>
+
+    <!-- Cancel -->
+    <string name="no_operation_des">请看本Activity的代码和注释</string>
+
+    <!-- error -->
+    <string name="error_please_check_network">请检查网络。</string>
+    <string name="error_timeout">请求超时，网络不好或者服务器不稳定。</string>
+    <string name="error_not_found_server">未发现指定服务器，清切换网络后重试。</string>
+    <string name="error_url_error">URL错误。</string>
+    <string name="error_not_found_cache">没有找到缓存.</string>
+    <string name="error_unknow">未知错误。</string>
+    <string name="error_response_code">服务器响应码%1$d</string>
+    <string name="error_response_code_dex">服务器响应码%1$d，如果你们服务器在这种情况下也返回数据你可以处理。</string>
+
+
+    <string name="app_name_about">贵州省重点运营车联网联控平台</string>
+    <string name="no_network">网络无连接，请检查网络</string>
+    <string name="socket_time_out">连接超时，请稍后重试</string>
+    <string name="exit_routine">再按一次退出程序</string>
+
+
+    <!--首页-->
+    <string name="tab_home">首页</string>
+    <string name="tab_service">服务</string>
+    <string name="tab_my">我的</string>
+    <string name="car_title">车辆</string>
+    <string name="car_location">车辆定位</string>
+
+    <string name="please_loginname">登录名</string>
+    <string name="please_loginnameet">请输入登录名</string>
+    <string name="please_loginnpwd">用户名</string>
+    <string name="please_loginnpwdet">请输入密码</string>
+
+
+    <!--车辆定位-->
+    <string name="car_01">接入平台:</string>
+    <string name="car_02">所属企业:</string>
+    <string name="car_03">入网时间:</string>
+    <string name="car_04">定位时间:</string>
+    <string name="search_car">请输入车牌号</string>
+    <string name="search">搜索</string>
+    <string name="search_car_nodate">无查询结果</string>
+    <string name="search_nodate">无查询纪录</string>
+    <string name="search_nodate_record">无查岗纪录</string>
+    <string name="search_nodate_aiya">哎呀~暂无数据</string>
+    <string name="nothing_position">暂无车辆位置信息</string>
+
+
+    <!--我的服务-->
+    <string name="my_service_1">车辆定位</string>
+    <string name="my_service_2">轨迹回放</string>
+    <string name="my_service_3">车辆详情</string>
+    <string name="my_service_4">实时视频</string>
+    <string name="my_service_5">区域分析</string>
+    <string name="my_service_6">行业分析</string>
+    <string name="my_service_7">报警分析</string>
+    <string name="my_service_8">业户分析</string>
+    <string name="my_service_9">平台分析</string>
+    <string name="my_service_10">调度纪录</string>
+    <string name="my_service_11">查岗</string>
+
+    <!--我的个人中心-->
+    <string name="my_center_info">账号信息</string>
+    <string name="my_center_pwd">修改密码</string>
+    <string name="my_center_about">关于我们</string>
+    <string name="my_center_out">退出当前账号</string>
+    <string name="my_center_outsure">确认退出登录</string>
+    <string name="my_out">退出登录</string>
+    <string name="takePhoto">拍照</string>
+    <string name="selectPicFromAlbum">从手机相册中选择</string>
+    <string name="confirm">确认</string>
+
+    <!--账户信息-->
+    <string name="my_infotitle">账户信息</string>
+    <string name="my_phone">电话号码</string>
+    <string name="my_user_name">用户名</string>
+    <string name="my_arecode_name">所属区域</string>
+    <string name="my_creation_date">创建时间</string>
+    <string name="my_deadline">过期时间</string>
+
+    <!--修改密码-->
+    <string name="updatepwd_title">修改密码</string>
+    <string name="tv_old_pwd">旧密码</string>
+    <string name="tv_new_pwd">新密码</string>
+    <string name="tv_new_pwdag">确认新密码</string>
+    <string name="et_old_pwd">请输入旧密码</string>
+    <string name="et_new_pwd">请输入密码</string>
+    <string name="et_new_pwdag">请输入新密码</string>
+    <string name="et_new_pwdag_fault">新密码与确认密码不一致</string>
+    <string name="et_new_pwdagg">请确认新密码</string>
+    <string name="confir_change">确认修改</string>
+    <string name="success_change">密码修改成功</string>
+
+    <!--关于我们-->
+    <string name="about_context">\t\t广州亿程交通信息有限公司(新宁物流[300013]旗下品牌)，全球领先的位置服务运营商，自2003年成立以来，一直专注于车联网事业，是一家拥有平台、 终端设备整套解决方案和自主知识产权的高新技术企业。\n \t\t “e云车队”是广州亿程重点打造的位置云服务平台的重要组成部分，通过GPS/北斗/2G/3G/4G、GIS、 车载WI-FI、移动互联、车联大数据、云计算等先进技术，为各行业用户提供车辆安全出行、用车成本、 用车效率、运营能力、车辆调度、实时视频等核心服务，打造更加安全、方便、快捷、高效的车辆运营服务体系。</string>
+    <string name="tv_copyright">Copyright © 2010 - 2017</string>
+    <string name="tv_copyright_name">广州亿程交通信息有限公司版权所有</string>
+
+    <!--车辆详情-->
+    <string name="detail_title">车辆详情</string>
+    <string name="detail_in">接入平台</string>
+    <string name="detail_in_time">入网时间</string>
+    <string name="detail_owner">所属业户</string>
+    <string name="detail_trade">所属行业</string>
+    <string name="detail_region">所属区域</string>
+    <string name="detail_type">车辆类型</string>
+    <string name="detail_color">车辆颜色</string>
+    <string name="detail_num">车牌号</string>
+
+    <!--轨迹-->
+    <string name="First_opentime">第一次上传数据时间</string>
+    <string name="Last_opentime">最后一次上传数据时间</string>
+    <string name="trajectory_nothing">暂无轨迹数据</string>
+
+    <!--业户分析-->
+    <string name="owner_title">业户分析</string>
+    <string name="search_owner">请输入业户名称</string>
+    <string name="tv_owner_num">业户数量</string>
+    <string name="tv_in_num">入网车辆</string>
+    <string name="tv_average">平均(辆/业户)</string>
+    <string name="tv_all_num">车辆数量</string>
+    <string name="tv_in_per">入网率</string>
+
+    <!--业户详情-->
+    <string name="tv_d_all_num">车辆总数</string>
+    <string name="tv_d_in_num">入网车辆总数</string>
+    <string name="tv_d_in_per">入网率</string>
+    <string name="tv_d_line_num">上线车辆总数</string>
+    <string name="tv_d_line_per">上线率</string>
+    <string name="tv_d_alarm_num">报警车辆总数</string>
+    <string name="tv_d_alarm_per">车辆报警率</string>
+    <string name="tv_d_speed_num">超速报警条数</string>
+    <string name="tv_d_speed_per">平均超速次数</string>
+    <string name="tv_d_tired_num">疲劳驾驶条数</string>
+    <string name="tv_d_tired_per">平均疲劳驾驶次数</string>
+    <string name="tv_d_clear_num">报警处理数</string>
+    <string name="tv_d_clear_per">处警率</string>
+    <string name="title_company_detail">业户详情</string>
+
+    <!--业户车辆分布-->
+    <string name="title_company_vehicle">车辆分布</string>
+    <string name="tv_company_pop">重点监控</string>
+
+    <!--业户公共搜索-->
+    <string name="search_company">请输入业户名称</string>
+
+    <!--首页-->
+    <string name="hotme_1">平台</string>
+    <string name="hotme_2">车辆</string>
+    <string name="hotme_3">入网</string>
+    <string name="hotme_4">在线</string>
+    <string name="hotme_5">报警</string>
+    <string name="hotme_6">行业未入网车辆占比</string>
+    <string name="hotme_66">今日报警车辆数分析</string>
+    <string name="dot">•</string>
+
+    <string name="hotme_7">班线客运</string>
+    <string name="hotme_8">旅游客运</string>
+    <string name="hotme_9">危运客运</string>
+    <string name="hotme_10">其他车辆</string>
+    <string name="other_warm">其他报警</string>
+    <string name="fatigue_warm">疲劳报警</string>
+    <string name="speed_warm">超速报警</string>
+
+
+    <!--区域分析-->
+    <string name="analysis_onlinenet">贵州省各市入网车辆与在线车辆数据比对</string>
+    <string name="analysis_online">在线</string>
+    <string name="analysis_1">车辆</string>
+    <string name="analysis_2">入网</string>
+    <string name="analysis_3">入网率</string>
+    <string name="analysis_4">当前在线</string>
+    <string name="analysis_5">今日报警</string>
+    <string name="add_net_analysis">每月新增入网趋势分析</string>
+    <string name="add_net_analysisall">与全省入网车辆占比分析</string>
+
+    <!--报警区域分析-->
+    <string name="warm_title">报警分析</string>
+    <string name="warm_1">车辆</string>
+    <string name="warm_2">在线</string>
+    <string name="warm_3">今日超速</string>
+    <string name="warm_4">今日疲劳</string>
+    <string name="warm_5">其他报警</string>
+    <string name="warm_6">今日处警率对比</string>
+    <string name="warm_7">今日报警车辆数分析</string>
+
+
+    <!--行业分析-->
+    <string name="industry_title">行业分析</string>
+    <string name="industry_1">车辆</string>
+    <string name="industry_2">班线</string>
+    <string name="industry_3">旅游</string>
+    <string name="industry_4">危运</string>
+    <string name="industry_5">其他</string>
+    <string name="industry_6">行业未入网车辆占比</string>
+    <string name="industry_7">班线客运每月新增入网趋势分析</string>
+    <string name="industry_iteam1">班线客运每月新增入网趋势分析</string>
+    <string name="industry_iteam2">旅游客运每月新增入网趋势分析</string>
+    <string name="industry_iteam3">危运车辆每月新增入网趋势分析</string>
+    <string name="industry_iteam4">其他车辆每月新增入网趋势分析</string>
+
+    <!--分页加载-->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新...</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中...</string>
+    <string name="no_more_maintenance">没有更多</string>
+
+    <!--平台分析-->
+    <string name="title_platform">平台分析</string>
+    <string name="tv_all">车辆</string>
+    <string name="tv_in">入网</string>
+    <string name="tv_link_per">连通率</string>
+
+
+    <!--查岗-->
+    <string name="search_post">查岗</string>
+    <string name="search_postmore">查岗详情</string>
+    <string name="record_post">查岗纪录</string>
+    <string name="search_post_work">查岗行业</string>
+    <string name="travle_car">旅游包车</string>
+    <string name="search_post_trouble">查岗问题</string>
+    <string name="transport_query">运管查询，请回复"在岗"</string>
+    <string name="answer">答案</string>
+    <string name="issued">下发</string>
+    <string name="the_number_of_households">业户数</string>
+    <string name="post_online">在岗率</string>
+
+    <!--ijkplayer-->
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+    <string name="VideoView_render_none">Render: None</string> 
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string> 
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+    <string name="N_A">N/A</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string> 
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+     
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+    <string name="mi_type">Type</string> 
+    <string name="mi_language">Language</string>
+     <string name="mi_codec">Codec</string> 
+    <string name="mi_frame_rate">Frame rate</string>
+     
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_profile_level">Profile level</string> 
+    <string name="mi_pixel_format">Pixel format</string> 
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_sample_rate">Sample rate</string> 
+    <string name="mi_channels">Channels</string>
+    <string name="media_information">Media Information</string>
+    <string name="close">Close</string>
+
+    <string name="mi_player">Player</string> 
+    <string name="mi_media">Media</string>
+    <string name="mi_length">Length</string>
+
+    <string name="TrackType_video">Video</string> 
+    <string name="TrackType_audio">Audio</string>
+     <string name="TrackType_subtitle">Subtitle</string> 
+    <string name="TrackType_timedtext">Timed text</string> 
+    <string name="TrackType_metadata">Meta data</string>
+     <string name="TrackType_unknown">Unknown</string> 
+
+    <string name="pref_key_enable_background_play">pref.enable_background_play</string>
+    <string name="pref_key_player">pref.player</string>
+    <string name="pref_key_using_media_codec">pref.using_media_codec</string>
+    <string name="pref_key_using_media_codec_auto_rotate">pref.using_media_codec_auto_rotate</string>
+    <string name="pref_key_media_codec_handle_resolution_change">pref.media_codec_handle_resolution_change</string>
+    <string name="pref_key_using_opensl_es">pref.using_opensl_es</string>
+    <string name="pref_key_pixel_format">pref.pixel_format</string>
+    <string name="pref_key_enable_no_view">pref.enable_no_view</string>
+    <string name="pref_key_enable_surface_view">pref.enable_surface_view</string>
+    <string name="pref_key_enable_texture_view">pref.enable_texture_view</string>
+     
+    <string name="pref_key_enable_detached_surface_texture">pref.enable_detached_surface_texture</string>
+    <string name="pref_key_using_mediadatasource">pref.using_mediadatasource</string>
+    <string name="pref_key_last_directory"></string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string> 
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string> 
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string> 
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string> 
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string> 
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+
+    <string name="title_main">高德定位SDK功能展示</string>
+
+    <string name="title_location">获取定位数据</string>
+    <string name="location">获取定位数据</string>
+    <string name="location_dec">调用定位接口获取定位数据</string>
+
+    <string name="title_geoFence">地理围栏</string>
+    <string name="geoFence">地理围栏</string>
+    <string name="geoFence_dec">展示地理围栏功能</string>
+
+    <string name="roundGeoFence">圆形地理围栏</string>
+    <string name="roundGeoFence_dec">展示圆形地理围栏</string>
+
+    <string name="polygonGeoFence">多边形地理围栏</string>
+    <string name="polygonGeoFence_dec">展示多边形地理围栏</string>
+
+    <string name="keywordGeoFence">关键字地理围栏</string>
+    <string name="keywordGeoFence_dec">展示关键字地理围栏</string>
+
+    <string name="nearbyGeoFence">周边地理围栏</string>
+    <string name="nearbyGeoFence_dec">展示周边地理围栏</string>
+
+    <string name="districtGeoFence">行政区划地理围栏</string>
+    <string name="districtGeoFence_dec">展示行政区划地理围栏</string>
+
+    <string name="multipleGeoFence">综合展示</string>
+    <string name="multipleGeoFence_dec">综合展示地理围栏的功能</string>
+
+
+    <string name="oldGeoFence">旧版地理围栏</string>
+    <string name="oldGeoFence_dec">旧版地理围栏，不建议使用</string>
+
+
+    <string name="title_assistantLocation">H5辅助定位</string>
+    <string name="assistantLocation">H5辅助定位</string>
+    <string name="assistantLocation_dec">展示H5辅助定位功能</string>
+
+    <string name="title_tools">地图计算工具</string>
+    <string name="tools">地图计算工具</string>
+    <string name="tools_dec">坐标转换等功能演示</string>
+
+    <string name="title_lastLocation">获取最后一次位置</string>
+    <string name="lastLocation">获取最后一次位置</string>
+    <string name="lastLocation_dec">获取最后一次定位的位置，此位置是一个历史位置</string>
+
+
+    <string name="title_alarmCPU">定时唤起CPU</string>
+    <string name="alarmCPU">定时唤起cpu</string>
+    <string name="alarmCPU_dec">通过一个闹钟程序后台定时唤起cpu</string>
+
+    <string name="title_errorCode">错误码说明</string>
+    <string name="errorCode">错误码说明</string>
+    <string name="errorCode_dec">错误码说明以及对应的解决方法</string>
+
+    <string name="defaultInteval">2000</string>
+    <string name="defaultHttpTimeout">30000</string>
+
+    <string name="battery_saving">低功耗模式</string>
+    <string name="device_sensors">仅设备模式</string>
+    <string name="hight_accuracy">高精度模式</string>
+    <string name="interval">定位周期(ms)</string>
+    <string name="httpTimeout">网络超时(ms)</string>
+    <string name="location_once">单次定位</string>
+    <string name="needAddress">逆地理编码</string>
+    <string name="cacheAble">开启缓存</string>
+    <string name="onceLastest">提高首次定位精度</string>
+    <string name="gpsFirst">GPS优先</string>
+    <string name="useSensor">使用传感器</string>
+    <string name="wifiScan">开启wifi扫描</string>
+
+    <string name="alarmInterval">唤醒周期(s)</string>
+
+    <string name="startLocation">开始定位</string>
+    <string name="stopLocation">停止定位</string>
+
+    <string name="fenceRadius">围栏半径</string>
+    <string name="meter">米</string>
+    <string name="activatesAction">触发条件</string>
+    <string name="alertIn">进入</string>
+    <string name="alertOut">离开</string>
+    <string name="alertStated">停留</string>
+    <string name="addFence">添加围栏</string>
+    <string name="removeFence">移除围栏</string>
+
+    <string name="hideOption">隐藏设置</string>
+    <string name="showOption">显示设置</string>
+
+    <string name="showList">显示列表</string>
+    <string name="hideList">隐藏列表</string>
+
+    <string name="fence_round">圆形围栏</string>
+    <string name="fence_polygon">多边形</string>
+    <string name="fence_keyword">关键字围栏</string>
+    <string name="fence_nearby">周边围栏</string>
+    <string name="fence_district">行政区划围栏</string>
+
+    <string name="getLastLocation">获取最后位置</string>
+
+    <string name="startAssistantLocation">启动H5辅助定位</string>
+    <string name="stopAssistantLocation">停止H5辅助定位</string>
+    <string name="urlLocation">浏览器定位</string>
+    <string name="assistantLocationInfo">辅助定位已经启动，请点击模拟浏览器请求或者在浏览器中输入http://127.0.0.1:43689/进行测试</string>
+
+    <string name="coordinateConvert">坐标转换</string>
+    <string name="checkIsChina">位置区域判断</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <!--赋值的时候,没有值-->
+    <string name="nothing">(-)</string>
+    <string name="title_activity_safe_special_campaign">SafeSpecialCampaignActivity</string>
+
+
+</resources>

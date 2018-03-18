@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <com.sx.trans.widget.view.WheelView
+        android:id="@+id/year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:itemNumber="5"
+        app:lineColor="@android:color/darker_gray"
+        app:lineHeight="2dp"
+        app:maskHight="32dp"
+        app:noEmpty="true"
+        app:normalTextColor="@color/material_green_300"
+        app:normalTextSize="14sp"
+        app:selectedTextColor="@color/material_light_blue_a700"
+        app:selectedTextSize="22sp"
+        app:unitHight="50dp" />
+
+    <com.sx.trans.widget.view.WheelView
+        android:id="@+id/month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:itemNumber="5"
+        app:lineColor="@android:color/darker_gray"
+        app:lineHeight="2dp"
+        app:maskHight="32dp"
+        app:noEmpty="true"
+        app:normalTextColor="@color/material_light_blue_a100"
+        app:normalTextSize="14sp"
+        app:selectedTextColor="@color/material_red_300"
+        app:selectedTextSize="22sp"
+        app:unitHight="50dp" />
+
+
+</LinearLayout>

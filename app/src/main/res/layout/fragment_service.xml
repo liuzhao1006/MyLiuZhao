@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/head_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true">
+
+        <com.sx.trans.supervision.widget.ScrollGridView.ScrollLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"/>
+
+        <com.sx.trans.supervision.widget.ScrollGridView.PageControlView
+            android:id="@+id/pageControl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:horizontalSpacing="0.0dip"
+            android:listSelector="@null"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0.0dip" />
+
+    </RelativeLayout>
+</LinearLayout>

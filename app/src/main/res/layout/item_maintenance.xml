@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <com.sx.trans.widget.font.LzTextView
+        android:id="@+id/ltv_fragment_mt_car"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_40_dip"
+        android:layout_margin="@dimen/dimen_10_dip"
+        android:layout_weight="1"
+        android:text="陕A12345"
+        android:textColor="@color/material_black"
+        android:textSize="18sp" />
+
+    <com.sx.trans.widget.font.LzTextView
+        android:id="@+id/ltv_fragment_mt_boolean"
+        android:layout_width="@dimen/dimen_40_dip"
+        android:layout_height="@dimen/dimen_40_dip"
+        android:text="在线"
+        android:textColor="@color/material_black9"
+        android:textSize="16sp" />
+
+</LinearLayout>
+

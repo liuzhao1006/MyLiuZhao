@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_dm_learn_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_10_dip"
+        android:paddingLeft="@dimen/dimen_5_dip"
+        android:paddingRight="@dimen/dimen_5_dip"
+        android:paddingTop="@dimen/dimen_10_dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_45_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/vehicle" />
+
+            <com.sx.trans.widget.font.LzTextView
+                style="@style/Ledger_Text_Style"
+                android:text="监控换班制度(2017年09月09日)"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.sx.trans.widget.font.LzTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="right"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="张三"
+            android:textColor="@color/maintvno_bg"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10_dip"
+        android:background="@color/view_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_dm_renewal_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_10_dip"
+        android:paddingLeft="@dimen/dimen_5_dip"
+        android:paddingRight="@dimen/dimen_5_dip"
+        android:paddingTop="@dimen/dimen_10_dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_45_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/vehicle" />
+
+            <com.sx.trans.widget.font.LzTextView
+                style="@style/Ledger_Text_Style"
+                android:text="值班制度(2017年09月09日)"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.sx.trans.widget.font.LzTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:gravity="right"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="李四"
+            android:textColor="@color/maintvno_bg"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

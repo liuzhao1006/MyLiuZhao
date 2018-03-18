@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40_dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/pdf_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="xxx案例分析"
+            android:textColor="@color/material_black"
+            android:textSize="12sp" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/pdf_time"
+            android:layout_width="@dimen/dimen_200_dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:gravity="center_vertical|right"
+            android:text="5分29秒"
+            android:textColor="@color/material_black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/bt_myoutbutton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40_dip"
+            android:layout_marginLeft="@dimen/dimen_20_dip"
+            android:layout_marginRight="@dimen/dimen_20_dip"
+            android:background="@drawable/select_query_bg"
+            android:text="文本学习"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

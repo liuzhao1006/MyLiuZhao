@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80_dip"
+
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10_dip">
+
+        <View
+            android:layout_width="@dimen/dimen_3_dip"
+            android:layout_height="@dimen/dimen_15_dip"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:background="@color/home_textblue" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/ll_accident_name"
+            style="@style/Ledger_Text_Style"
+            android:text="事故名称" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/ll_accident_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="8px"
+            android:text="(2017-09-09)"
+            android:textColor="@color/maintvno_bg"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+
+            android:src="@drawable/right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1_dip"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        android:layout_marginRight="@dimen/dimen_10_dip"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10_dip">
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/ll_accident_normal"
+            style="@style/Ledger_Text_Style_second_HW"
+            android:text="一般事故" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/ll_accident_handling"
+            style="@style/Ledger_Text_Style_second_HW"
+            android:gravity="center"
+            android:text="未处理" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#ececec" />
+</LinearLayout>

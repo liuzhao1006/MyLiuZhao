@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/hight_width_10dp">
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/history_adapter_konwedge"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/tongzhi_pop_backage1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="2017年6月22日"
+            android:textColor="#666"
+            android:textSize="@dimen/textsize_18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/type_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/isfinish_img" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/isFinsh_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:padding="@dimen/hight_width_5dp"
+                    android:textColor="#666"
+                    android:textSize="@dimen/textsize_11sp" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/history_adapter_iv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/shibai" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

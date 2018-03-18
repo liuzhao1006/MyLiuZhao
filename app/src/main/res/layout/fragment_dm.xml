@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.sx.trans.widget.font.LzTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="学习"
+            android:textColor="#333333"
+            android:textSize="17sp"
+
+            />
+
+        <View
+            android:layout_width="@dimen/dimen_1_dip"
+            android:layout_height="match_parent"
+            android:background="@color/view_line" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_20_dip"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progressbar"
+            android:visibility="visible" />
+
+        <com.sx.trans.widget.font.LzTextView
+            android:id="@+id/tv_learn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:gravity="center_vertical"
+            android:text="0学时"
+            android:textColor="#48B354"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_5_dip"
+        android:background="@color/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_135_dip"
+
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tv_SystemSpecification"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_40_dip"
+                        android:layout_height="@dimen/dimen_40_dip"
+                        android:gravity="center"
+                        android:src="@drawable/annuallearningplan" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="年度学习计划"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="@dimen/dimen_1_dip"
+                    android:layout_height="match_parent"
+                    android:background="#ececec" />
+
+                <LinearLayout
+                    android:id="@+id/ll_local_law"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_40_dip"
+                        android:layout_height="@dimen/dimen_40_dip"
+                        android:gravity="center"
+                        android:src="@drawable/institutionalnorms" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="地方法规政策"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="@dimen/dimen_1_dip"
+                    android:layout_height="match_parent"
+                    android:background="#ececec" />
+
+                <LinearLayout
+                    android:id="@+id/tv_safetyGoals"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_40_dip"
+                        android:layout_height="@dimen/dimen_40_dip"
+                        android:gravity="center"
+                        android:src="@drawable/enterpriserulesandsystems" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="企业规章制度"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/annualplan1"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<com.sx.trans.widget.font.LzTextView-->
+                    <!--android:id="@+id/tv_SystemSpecification"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="年度计划"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/dimen_20_dip" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/ll_fragment_dm_special_study"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_weight="1"
+                android:background="@drawable/specialstudy1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/tv_safetyMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="专项学习"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_20_dip" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_fragment_dm_enterprise_rule"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="@dimen/dimen_10_dip"-->
+            <!--android:layout_marginTop="@dimen/dimen_10_dip"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_local_law"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/localregulationsandpolicies3"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<com.sx.trans.widget.font.LzTextView-->
+                    <!--android:id="@+id/tv_safeShow"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="地方法规政策"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/dimen_20_dip" />-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<View-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginRight="@dimen/dimen_10_dip"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/enterpriserulesandregulations1"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<com.sx.trans.widget.font.LzTextView-->
+                    <!--android:id="@+id/tv_safetyGoals"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="企业规章制度"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/dimen_20_dip" />-->
+
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:background="@color/view_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_dm_learn_plan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="@dimen/dimen_30_dip"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/learningcoursewareinthemonth" />
+
+            <com.sx.trans.widget.font.LzTextView
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="当月学习课件"
+                android:textColor="#656565"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgin_1"
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_5_dip"
+            android:background="@color/view_line" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/ref_rlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                android:id="@+id/rlv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="#ececec"
+                android:scrollbars="vertical" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

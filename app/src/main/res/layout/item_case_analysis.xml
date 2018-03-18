@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dm_learn_plan"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50_dip"
+    android:layout_marginBottom="@dimen/dimen_10_dip"
+    android:layout_marginTop="@dimen/dimen_10_dip"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10_dip">
+
+
+    <com.sx.trans.widget.font.LzTextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="事故分析"
+        android:textColor="#656565"
+        android:textSize="20sp" />
+
+    <com.sx.trans.widget.font.LzTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="(2017年09月11日)"
+        android:textColor="@color/material_black9"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/havetolearn" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right" />
+</LinearLayout>
+
+
+

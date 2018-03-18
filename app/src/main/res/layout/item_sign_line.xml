@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10_dip">
+
+    <com.sx.trans.widget.font.LzTextView
+        android:id="@+id/tv_vehicle_plate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:layout_weight="1"
+        android:text="车牌"
+        android:textColor="@color/material_black"
+        android:textSize="16sp" />
+
+    <com.sx.trans.widget.font.LzTextView
+        android:id="@+id/tv_vehicle_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:layout_weight="1"
+        android:text="下次维护日期"
+        android:textColor="@color/material_black70"
+        android:textSize="16sp" />
+
+    <com.sx.trans.widget.font.LzTextView
+        android:id="@+id/tv_vehicle_des"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical|right"
+        android:singleLine="true"
+        android:text="部门"
+        android:textColor="@color/material_black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_30_dip"
+        android:layout_height="@dimen/dimen_30_dip"
+        android:src="@drawable/right" />
+</LinearLayout>

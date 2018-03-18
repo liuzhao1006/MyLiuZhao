@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top" />
+
+    <com.sx.trans.widget.view.LzScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_70_dip"
+
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_10_dip">
+
+                <ImageView
+                    android:layout_marginRight="@dimen/dimen_5_dip"
+                    android:layout_width="@dimen/dimen_32_dip"
+                    android:layout_height="@dimen/dimen_32_dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/smallenterprise" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/tv_UseName"
+                    style="@style/Ledger_Text_Style"
+                    android:text="基础信息展示" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee" />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="企业名称" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_name"
+                    style="@style/lztextview_content"
+                    android:gravity="center_vertical|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="经营许可证号" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_type"
+                    style="@style/lztextview_content"
+                    android:gravity="center_vertical|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="总车辆数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_xingtai"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="当前在线车辆数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_time"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="总人员数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_address"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="当前在岗人员数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_sky"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="线路数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_grade"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_70_dip"
+
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_10_dip">
+
+                <ImageView
+                    android:layout_marginRight="@dimen/dimen_5_dip"
+                    android:layout_width="@dimen/dimen_32_dip"
+                    android:layout_height="@dimen/dimen_32_dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jiankongbaojing" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/Ledger_Text_Style"
+                    android:text="监控报警数据" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee" />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="当天报警数汇总" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_situation"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="当天未处理报警数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_lmzk"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+
+                    android:ellipsize="end"
+                    android:text="当天特值监控平台报警" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_zjyy"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="当月报警数汇总" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_jsy"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="当月未处理报警数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_cyzglb"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+
+                    android:ellipsize="end"
+                    android:text="当月特值监控平台报警" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_cyzgzh"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+
+                    android:ellipsize="end"
+                    android:text="企业当前所有报警数汇总" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_cph"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+
+                    android:ellipsize="end"
+                    android:text="企业当前未处理报警数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_yszh"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+
+                    android:ellipsize="end"
+                    android:text="企业当前特值监控平台报警" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_cx"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_70_dip"
+
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_10_dip">
+
+                <ImageView
+                    android:layout_marginRight="@dimen/dimen_5_dip"
+                    android:layout_width="@dimen/dimen_32_dip"
+                    android:layout_height="@dimen/dimen_32_dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/analysisofdrivingbehavior" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/tv_swssqk"
+                    style="@style/Ledger_Text_Style"
+                    android:text="安全管理业务数据：" />
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee" />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="当月基础学时" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_hdrs"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="企业未完成人数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_szrshu"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+
+                    android:ellipsize="end"
+                    android:text="本月底保险到期已处理件数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_wxhxppm"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="未处理件数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_yxxl"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="本月底年审到期已处理件数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_xllb"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="未处理件数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_sfd"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="制度规范" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_sgzr"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="企业当月合同到期数量" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_bar"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="未续签合同数量" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_badh"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="年度安全会议" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_ssjg"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="@color/view_line" />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="年度会议" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_swrs"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="本年度事故总数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_bcsw"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="未处理分析事故总数" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_szsw"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+            <LinearLayout style="@style/linearlayout">
+
+                <com.sx.trans.widget.font.LzTextView
+                    style="@style/lztextview"
+                    android:gravity="center_vertical"
+                    android:text="年度安全演习" />
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/ltv_wjsw"
+                    style="@style/lztextview_content"
+                    android:gravity="center|right"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginLeft="@dimen/dimen_47_dip"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1_dip"
+                android:background="#eeeeee"  />
+        </LinearLayout>
+
+    </com.sx.trans.widget.view.LzScrollView>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_line"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_180_dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/c" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="人身险"
+            android:textColor="@color/material_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="2017年09月11日"
+            android:textColor="@color/material_black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_5_dip"
+        android:background="@color/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="交强险"
+            android:textColor="@color/material_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="2017年09月10日"
+            android:textColor="@color/material_black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_5_dip"
+        android:background="@color/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="商业险"
+            android:textColor="@color/material_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="2017年11月11日"
+            android:textColor="@color/material_black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_5_dip"
+        android:background="@color/view_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="货物险"
+            android:textColor="@color/material_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:padding="@dimen/dimen_10_dip"
+            android:text="2017年11月11日"
+            android:textColor="@color/material_black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

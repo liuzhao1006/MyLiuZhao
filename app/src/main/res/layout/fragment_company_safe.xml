@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/include_top_head" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.sx.trans.widget.view.LzScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="@dimen/dimen_8_dip"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_8_dip"
+
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <com.sx.trans.widget.font.LzTextView
+                    android:id="@+id/tv_safeStudy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="安全学习  23%"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_18_dip" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_annualVerification"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="年审"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_accident"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="事故"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:layout_weight="1"
+
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_insurance"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="保险"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_maintenance"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="维护"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_hiddenTrouble"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="隐患"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:layout_weight="1"
+
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_Meetting"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="会议"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_SystemSpecification"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="制度规范"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_20_dip" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_safetyMessage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="安全报告"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_20_dip" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_safeShow"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="安全演习"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_20_dip" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_safetyGoals"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="安全目标"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_20_dip" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_safetyInput"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="安全投入"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_20_dip" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:layout_weight="1"
+
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <com.sx.trans.widget.font.LzTextView
+                        android:id="@+id/tv_specialCampaign"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="专项活动"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_20_dip" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@color/view_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_10_dip"
+            android:paddingBottom="@dimen/dimen_10_dip"
+            android:paddingLeft="@dimen/dimen_10_dip"
+            android:paddingRight="@dimen/dimen_10_dip"
+            android:text="日期"/>
+        <TextView
+            android:id="@+id/spinnerDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kuangzi"
+
+            android:text="请选择"
+            android:paddingTop="@dimen/dimen_3_dip"
+            android:paddingBottom="@dimen/dimen_3_dip"
+            android:paddingLeft="@dimen/dimen_5_dip"
+            android:paddingRight="@dimen/dimen_14_dip"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ltv_distribution"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10_dip">
+
+        <com.sx.trans.widget.font.LzTextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="风险分布分析" />
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/right" />
+    </LinearLayout>
+</LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_pie"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_450_dip">
+
+                    <com.github.mikephil.charting.charts.RadarChart
+                        android:id="@+id/mPieChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_pie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/default01"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.sx.trans.widget.view.LzScrollView>
+
+</LinearLayout>

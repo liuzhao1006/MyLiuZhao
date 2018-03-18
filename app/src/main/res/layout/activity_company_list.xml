@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.sx.trans.supervision.widget.PullToRefreshView
+        android:id="@+id/pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ListView
+            android:id="@+id/lv_company"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="12dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+    </com.sx.trans.supervision.widget.PullToRefreshView>
+
+    <LinearLayout
+        android:id="@+id/iv_no_data"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/default03"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            style="@style/nodate"
+            android:text="@string/search_nodate_aiya" />
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

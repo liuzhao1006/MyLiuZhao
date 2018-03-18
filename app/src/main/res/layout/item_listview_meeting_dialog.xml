@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_80_dip"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dimen_20_dip"
+    android:paddingLeft="@dimen/dimen_10_dip"
+    android:paddingRight="@dimen/dimen_10_dip"
+    android:paddingTop="@dimen/dimen_20_dip">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/material_black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="@dimen/dimen_1_dip"
+        android:layout_height="match_parent"
+        android:background="@color/view_line" />
+
+    <TextView
+        android:id="@+id/tv_Date"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingRight="@dimen/dimen_10_dip"
+        android:text="-"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="@dimen/dimen_1_dip"
+        android:layout_height="match_parent"
+        android:background="@color/view_line" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/material_green_600"
+        android:textSize="12sp" />
+    <View
+        android:layout_width="@dimen/dimen_1_dip"
+        android:layout_height="match_parent"
+        android:background="@color/view_line" />
+
+    <TextView
+        android:id="@+id/tv_state_company"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/material_green_600"
+        android:textSize="12sp" />
+
+
+</LinearLayout>
